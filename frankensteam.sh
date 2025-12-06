@@ -13,7 +13,7 @@ readonly USER_NAME=user
 readonly HOST_NAME=frankensteam
 
 # Directory paths
-BASE_DIR="$(pwd)"
+BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 CONTAINER_HOME="${BASE_DIR}/home"
 DATA_STORAGE="$(dirname "${BASE_DIR}")/Library" #change this to your Steam Library location
 
